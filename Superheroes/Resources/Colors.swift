@@ -39,8 +39,8 @@ struct Color {
     
     static let black = Color(rgbaValue: 0xff181818).color
     static let white = Color(rgbaValue: 0xffffffff).color
-    static let primary = Color(rgbaValue: 0xffed1b2a).color
-    static let secondary = Color(rgbaValue: 0xffb2131e).color
+    static let primary = Color(rgbaValue: 0xed1b2aff).color
+    static let secondary = Color(rgbaValue: 0xb2131eff).color
     
     static func color(named name: String) -> UIColor {
         switch name {

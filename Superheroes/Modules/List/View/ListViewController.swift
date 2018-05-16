@@ -53,7 +53,8 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
 extension ListViewController: ListViewing {
     
     func configureUI() {
-        title = "Superheroes"
+        title = "SUPERHEROES"
+        tableView.backgroundColor = Color.secondary.withAlpha(0.9)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)

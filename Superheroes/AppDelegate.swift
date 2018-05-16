@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+            setupAppearance()
+        
             window = UIWindow(frame: UIScreen.main.bounds)
             if let window = window {
                 guard
@@ -29,6 +31,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 window.makeKeyAndVisible()
             }
         return true
+    }
+    
+    func setupAppearance() {
+        UINavigationBar.appearance().barTintColor = Color.secondary
+        UINavigationBar.appearance().tintColor = Color.white
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: Color.white,
+                                                            NSAttributedStringKey.font: UIFont(name: "BentonSans-Black", size: 20.0)]
     }
 }
 
