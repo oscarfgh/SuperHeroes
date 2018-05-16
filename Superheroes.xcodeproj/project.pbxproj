@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55C423EE20AC4E8E003DC6B2 /* SuperheroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C423ED20AC4E8E003DC6B2 /* SuperheroesRepository.swift */; };
+		55C423F120AC50E5003DC6B2 /* Presenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C423F020AC50E5003DC6B2 /* Presenting.swift */; };
 		55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */; };
 		55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51320AC3EB2003F0564 /* Main.storyboard */; };
 		55CDF51720AC3EB3003F0564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51620AC3EB3003F0564 /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		3694C0B85B63629FC22A21DF /* Pods-SuperheroesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperheroesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperheroesUITests/Pods-SuperheroesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4FDC6A66B675FA298249388D /* Pods-SuperheroesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperheroesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SuperheroesTests/Pods-SuperheroesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		55C423ED20AC4E8E003DC6B2 /* SuperheroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroesRepository.swift; sourceTree = "<group>"; };
+		55C423F020AC50E5003DC6B2 /* Presenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presenting.swift; sourceTree = "<group>"; };
 		55CDF50C20AC3EB2003F0564 /* Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CDF51420AC3EB2003F0564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		55C423EF20AC50E5003DC6B2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				55C423F020AC50E5003DC6B2 /* Presenting.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		55CDF50320AC3EB2003F0564 = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +182,7 @@
 		55CDF53D20AC3FFB003F0564 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				55C423EF20AC50E5003DC6B2 /* Base */,
 				55CDF51320AC3EB2003F0564 /* Main.storyboard */,
 			);
 			path = Modules;
@@ -493,6 +504,7 @@
 				55CDF55B20AC4477003F0564 /* Constanst.swift in Sources */,
 				55CDF54D20AC431C003F0564 /* APIClient.swift in Sources */,
 				55CDF55520AC4428003F0564 /* Superheroes.swift in Sources */,
+				55C423F120AC50E5003DC6B2 /* Presenting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
