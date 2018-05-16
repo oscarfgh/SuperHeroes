@@ -4,10 +4,28 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Superheroes.xcscheme</key>
+		<key>Superheroes.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>3</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>55CDF50B20AC3EB2003F0564</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55CDF51F20AC3EB3003F0564</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>55CDF52A20AC3EB3003F0564</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

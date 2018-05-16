@@ -3,7 +3,7 @@ platform :ios, '9.0'
 target 'Superheroes' do
   use_frameworks!
 
-  # Pods for Superheroes
+  pod 'Result'
 
   target 'SuperheroesTests' do
     inherit! :search_paths

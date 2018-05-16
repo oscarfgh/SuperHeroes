@@ -14,6 +14,10 @@
 		55CDF52520AC3EB3003F0564 /* SuperheroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF52420AC3EB3003F0564 /* SuperheroesTests.swift */; };
 		55CDF53020AC3EB3003F0564 /* SuperheroesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF52F20AC3EB3003F0564 /* SuperheroesUITests.swift */; };
 		55CDF54320AC410C003F0564 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF54220AC410C003F0564 /* Podfile */; };
+		55CDF54D20AC431C003F0564 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF54620AC431C003F0564 /* APIClient.swift */; };
+		55CDF54E20AC431C003F0564 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF54720AC431C003F0564 /* Resource.swift */; };
+		55CDF54F20AC431C003F0564 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF54820AC431C003F0564 /* APIClientError.swift */; };
+		55CDF55020AC431C003F0564 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF54A20AC431C003F0564 /* Data.swift */; };
 		7716EDC52BBBD4DA80A14DD3 /* Pods_Superheroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA058026BAC9074106F477C7 /* Pods_Superheroes.framework */; };
 		9D1D16F2D54ED851718C4145 /* Pods_SuperheroesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71549E5B33A883344E7E70B2 /* Pods_SuperheroesUITests.framework */; };
 		EF3177A7BDDE72F4229DDDF9 /* Pods_SuperheroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2C50BAB0607883C4EC35B /* Pods_SuperheroesTests.framework */; };
@@ -54,6 +58,10 @@
 		55CDF52F20AC3EB3003F0564 /* SuperheroesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroesUITests.swift; sourceTree = "<group>"; };
 		55CDF53120AC3EB3003F0564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CDF54220AC410C003F0564 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		55CDF54620AC431C003F0564 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		55CDF54720AC431C003F0564 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		55CDF54820AC431C003F0564 /* APIClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
+		55CDF54A20AC431C003F0564 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		71549E5B33A883344E7E70B2 /* Pods_SuperheroesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperheroesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AD0DFA010DFF7B421089F2 /* Pods-Superheroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Superheroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Superheroes/Pods-Superheroes.debug.xcconfig"; sourceTree = "<group>"; };
 		B59DD5C8FE90B224A7B80D1F /* Pods-SuperheroesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperheroesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperheroesUITests/Pods-SuperheroesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +161,8 @@
 		55CDF53F20AC4017003F0564 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				55CDF54420AC431C003F0564 /* API */,
+				55CDF54920AC431C003F0564 /* Extensions */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -172,6 +182,32 @@
 				55CDF51820AC3EB3003F0564 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		55CDF54420AC431C003F0564 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				55CDF54520AC431C003F0564 /* Core */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		55CDF54520AC431C003F0564 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				55CDF54620AC431C003F0564 /* APIClient.swift */,
+				55CDF54720AC431C003F0564 /* Resource.swift */,
+				55CDF54820AC431C003F0564 /* APIClientError.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		55CDF54920AC431C003F0564 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				55CDF54A20AC431C003F0564 /* Data.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		805FC9DF4C719B9C1A0811EC /* Frameworks */ = {
@@ -208,6 +244,7 @@
 				55CDF50820AC3EB2003F0564 /* Sources */,
 				55CDF50920AC3EB2003F0564 /* Frameworks */,
 				55CDF50A20AC3EB2003F0564 /* Resources */,
+				E64CF338FB653B7057E1F8B7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -382,6 +419,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E64CF338FB653B7057E1F8B7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Superheroes/Pods-Superheroes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Superheroes/Pods-Superheroes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -389,7 +444,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55CDF54E20AC431C003F0564 /* Resource.swift in Sources */,
+				55CDF55020AC431C003F0564 /* Data.swift in Sources */,
 				55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */,
+				55CDF54F20AC431C003F0564 /* APIClientError.swift in Sources */,
+				55CDF54D20AC431C003F0564 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
