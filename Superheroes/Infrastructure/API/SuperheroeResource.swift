@@ -9,11 +9,11 @@
 import Foundation
 import Result
 
-enum SuperheroeResource {
+enum SuperheroesResource {
     case all
 }
 
-extension SuperheroeResource: Resource {
+extension SuperheroesResource: Resource {
     
     var method: Method {
         switch self {
@@ -46,7 +46,7 @@ extension SuperheroeResource: Resource {
 
 extension URL {
     
-    static func cardContainerURL() -> URL {
+    static func superheroeURL() -> URL {
         guard let baseURL = URL(string: AppURL.DomainsAPI.release) else {
             fatalError("API URL is needed")
         }
@@ -56,12 +56,12 @@ extension URL {
 
 extension APIClient {
     
-    static func cardContainerAPIClient() -> APIClient {
-        return APIClient(baseURL: URL.cardContainerURL())
+    static func superheroesAPIClient() -> APIClient {
+        return APIClient(baseURL: URL.superheroeURL())
     }
     
-    func cardContainer(completion: @escaping (Result<[Superheroe], APIClientError>) -> Void) {
-        let resource = SuperheroeResource.all
+    func superheroes(completion: @escaping (Result<[Superheroe], APIClientError>) -> Void) {
+        let resource = SuperheroesResource.all
         object(resource) { (result: Result<[Superheroe], APIClientError>) in
             completion(result)
         }
