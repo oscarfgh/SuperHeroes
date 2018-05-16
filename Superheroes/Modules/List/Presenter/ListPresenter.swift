@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Result
 
 class ListPresenter {
 
@@ -27,6 +28,17 @@ extension ListPresenter: Presenting {
 
   func viewDidLoad() {
     print("List")
+    
+    view?.configureUI()
+    
+    interactor.superheroes { (result: Result<Superheroes, APIClientError>) in
+        switch result {
+        case .failure(let error):
+            return
+        case .success(let data):
+            self.view?.reloadData(data: data.superheroes)
+        }
+    }
   }
 }
 

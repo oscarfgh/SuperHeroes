@@ -11,7 +11,7 @@ import Result
 
 protocol SuperheroesStoring {
     
-    func superheroes(completion: @escaping (Result<[Superheroe], APIClientError>) -> Void)
+    func superheroes(completion: @escaping (Result<Superheroes, APIClientError>) -> Void)
 }
 
 final class SuperHeroesRepository: SuperheroesStoring {
@@ -20,8 +20,8 @@ final class SuperHeroesRepository: SuperheroesStoring {
         return APIClient.superheroesAPIClient()
     }()
     
-    func superheroes(completion: @escaping (Result<[Superheroe], APIClientError>) -> Void) {
-        superheoresAPI.superheroes { (result: Result<[Superheroe], APIClientError>) in
+    func superheroes(completion: @escaping (Result<Superheroes, APIClientError>) -> Void) {
+        superheoresAPI.superheroes { (result: Result<Superheroes, APIClientError>) in
             completion(result)
         }
     }

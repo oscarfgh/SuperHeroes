@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Result
 
 struct ListInteractorDependencies: HasSuperheroesStoring {
 
@@ -33,5 +34,19 @@ class ListInteractor {
 
     deinit {
         print("Bye ListInteractor!")
+    }
+    
+    func superheroes(completionQueue: DispatchQueue = DispatchQueue.main,
+                     completion: @escaping (Result<Superheroes, APIClientError>) -> Void) {
+        dependencies.superheroesRepository.superheroes { (result: Result<Superheroes, APIClientError>) in
+            completionQueue.async {
+                switch result {
+                case .failure(let error):
+                    completion(Result(error: error))
+                case .success(let superheroes):
+                    completion(Result(value: superheroes))
+                }
+            }
+        }
     }
 }

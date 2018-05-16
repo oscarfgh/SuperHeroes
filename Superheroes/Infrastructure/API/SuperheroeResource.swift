@@ -60,9 +60,9 @@ extension APIClient {
         return APIClient(baseURL: URL.superheroeURL())
     }
     
-    func superheroes(completion: @escaping (Result<[Superheroe], APIClientError>) -> Void) {
+    func superheroes(completion: @escaping (Result<Superheroes, APIClientError>) -> Void) {
         let resource = SuperheroesResource.all
-        object(resource) { (result: Result<[Superheroe], APIClientError>) in
+        object(resource) { (result: Result<Superheroes, APIClientError>) in
             completion(result)
         }
     }
