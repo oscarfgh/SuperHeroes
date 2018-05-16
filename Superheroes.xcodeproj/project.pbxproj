@@ -20,6 +20,8 @@
 		55CDF55020AC431C003F0564 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF54A20AC431C003F0564 /* Data.swift */; };
 		55CDF55520AC4428003F0564 /* Superheroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF55320AC4428003F0564 /* Superheroes.swift */; };
 		55CDF55620AC4428003F0564 /* Superheroe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF55420AC4428003F0564 /* Superheroe.swift */; };
+		55CDF55820AC446D003F0564 /* SuperheroeResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF55720AC446D003F0564 /* SuperheroeResource.swift */; };
+		55CDF55B20AC4477003F0564 /* Constanst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF55A20AC4477003F0564 /* Constanst.swift */; };
 		7716EDC52BBBD4DA80A14DD3 /* Pods_Superheroes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA058026BAC9074106F477C7 /* Pods_Superheroes.framework */; };
 		9D1D16F2D54ED851718C4145 /* Pods_SuperheroesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71549E5B33A883344E7E70B2 /* Pods_SuperheroesUITests.framework */; };
 		EF3177A7BDDE72F4229DDDF9 /* Pods_SuperheroesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB2C50BAB0607883C4EC35B /* Pods_SuperheroesTests.framework */; };
@@ -66,6 +68,8 @@
 		55CDF54A20AC431C003F0564 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		55CDF55320AC4428003F0564 /* Superheroes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Superheroes.swift; sourceTree = "<group>"; };
 		55CDF55420AC4428003F0564 /* Superheroe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Superheroe.swift; sourceTree = "<group>"; };
+		55CDF55720AC446D003F0564 /* SuperheroeResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperheroeResource.swift; sourceTree = "<group>"; };
+		55CDF55A20AC4477003F0564 /* Constanst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constanst.swift; sourceTree = "<group>"; };
 		71549E5B33A883344E7E70B2 /* Pods_SuperheroesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SuperheroesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77AD0DFA010DFF7B421089F2 /* Pods-Superheroes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Superheroes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Superheroes/Pods-Superheroes.debug.xcconfig"; sourceTree = "<group>"; };
 		B59DD5C8FE90B224A7B80D1F /* Pods-SuperheroesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SuperheroesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SuperheroesUITests/Pods-SuperheroesUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -165,6 +169,7 @@
 		55CDF53F20AC4017003F0564 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				55CDF55920AC4477003F0564 /* Constanst */,
 				55CDF55220AC4428003F0564 /* Models */,
 				55CDF54420AC431C003F0564 /* API */,
 				55CDF54920AC431C003F0564 /* Extensions */,
@@ -192,6 +197,7 @@
 		55CDF54420AC431C003F0564 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				55CDF55720AC446D003F0564 /* SuperheroeResource.swift */,
 				55CDF54520AC431C003F0564 /* Core */,
 			);
 			path = API;
@@ -222,6 +228,14 @@
 				55CDF55420AC4428003F0564 /* Superheroe.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		55CDF55920AC4477003F0564 /* Constanst */ = {
+			isa = PBXGroup;
+			children = (
+				55CDF55A20AC4477003F0564 /* Constanst.swift */,
+			);
+			path = Constanst;
 			sourceTree = "<group>";
 		};
 		805FC9DF4C719B9C1A0811EC /* Frameworks */ = {
@@ -463,6 +477,8 @@
 				55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */,
 				55CDF54F20AC431C003F0564 /* APIClientError.swift in Sources */,
 				55CDF55620AC4428003F0564 /* Superheroe.swift in Sources */,
+				55CDF55820AC446D003F0564 /* SuperheroeResource.swift in Sources */,
+				55CDF55B20AC4477003F0564 /* Constanst.swift in Sources */,
 				55CDF54D20AC431C003F0564 /* APIClient.swift in Sources */,
 				55CDF55520AC4428003F0564 /* Superheroes.swift in Sources */,
 			);
