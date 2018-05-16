@@ -18,7 +18,8 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
     let cellIdentifier = String(describing: ListCell.self)
     let cellHeight: CGFloat = 200.0
     var eventHandler: ListEventHandling?
-    var superheroes: [Superheroe]?
+    var superheroes: [Superheroe]!
+    var selectSuperheroe: Superheroe!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -38,7 +39,13 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
         
         switch segueIdentifier {
         case .showDetailView:
-            break
+            guard
+                let viewController = segue.destination as? DetailViewController else {
+                    print("Not get DetailViewController")
+                    return
+            }
+
+            eventHandler?.prepareDetailViewController(viewController, superheroe: selectSuperheroe)
         }
     }
 }
@@ -58,6 +65,7 @@ extension ListViewController: ListViewing {
     }
     
     func presentView(forCell index: Int) {
+        selectSuperheroe = superheroes[index]
         performSegueWithIdentifier(.showDetailView, sender: self)
     }
 }

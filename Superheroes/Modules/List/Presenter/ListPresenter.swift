@@ -47,4 +47,8 @@ extension ListPresenter: ListEventHandling {
     func pressCell(withIndex index: Int) {
         view?.presentView(forCell: index)
     }
+    
+    func prepareDetailViewController(_ viewController: DetailViewController, superheroe: Superheroe) {
+        connector?.initializeDetailModule(viewController, superheroe: superheroe)
+    }
 }

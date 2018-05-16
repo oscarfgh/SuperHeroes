@@ -59,10 +59,10 @@
             </objects>
             <point key="canvasLocation" x="-1090" y="123"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="vuS-DD-iBP">
             <objects>
-                <viewController id="eHd-EO-tzq" sceneMemberID="viewController">
+                <viewController id="eHd-EO-tzq" customClass="DetailViewController" customModule="Superheroes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="S79-Eh-1eA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

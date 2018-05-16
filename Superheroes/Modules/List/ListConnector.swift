@@ -10,6 +10,7 @@ import Foundation
 
 class ListConnector {
 
+    var detailConnector: DetailConnector!
     var view: ListViewController!
 
     func wireUp(_ viewController: ListViewController,
@@ -25,6 +26,19 @@ class ListConnector {
 
     func untangleUp() {
         view = nil
+    }
+    
+    func initializeDetailModule(_ viewController: DetailViewController, superheroe: Superheroe) {
+        detailConnector = DetailConnector()
+        detailConnector.wireUp(viewController, superheroe: superheroe)
+    }
+    
+    func deinitializeDetailModule() {
+        if (detailConnector == nil) {
+            return
+        }
+        detailConnector.untangleUp()
+        detailConnector = nil
     }
 
     deinit {

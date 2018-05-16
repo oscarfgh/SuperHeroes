@@ -11,4 +11,5 @@ import Foundation
 protocol ListEventHandling: Presenting {
     
     func pressCell(withIndex index: Int)
+    func prepareDetailViewController(_ viewController: DetailViewController, superheroe: Superheroe)
 }
