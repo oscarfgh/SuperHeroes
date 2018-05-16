@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */; };
-		55CDF51220AC3EB2003F0564 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF51120AC3EB2003F0564 /* ViewController.swift */; };
 		55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51320AC3EB2003F0564 /* Main.storyboard */; };
 		55CDF51720AC3EB3003F0564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51620AC3EB3003F0564 /* Assets.xcassets */; };
 		55CDF51A20AC3EB3003F0564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51820AC3EB3003F0564 /* LaunchScreen.storyboard */; };
@@ -36,7 +35,6 @@
 /* Begin PBXFileReference section */
 		55CDF50C20AC3EB2003F0564 /* Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		55CDF51120AC3EB2003F0564 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		55CDF51420AC3EB2003F0564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		55CDF51620AC3EB3003F0564 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55CDF51920AC3EB3003F0564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,11 +96,10 @@
 			isa = PBXGroup;
 			children = (
 				55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */,
-				55CDF51120AC3EB2003F0564 /* ViewController.swift */,
-				55CDF51320AC3EB2003F0564 /* Main.storyboard */,
-				55CDF51620AC3EB3003F0564 /* Assets.xcassets */,
-				55CDF51820AC3EB3003F0564 /* LaunchScreen.storyboard */,
-				55CDF51B20AC3EB3003F0564 /* Info.plist */,
+				55CDF53F20AC4017003F0564 /* Infrastructure */,
+				55CDF53D20AC3FFB003F0564 /* Modules */,
+				55CDF54120AC4031003F0564 /* Resources */,
+				55CDF54020AC4028003F0564 /* Supporting Files */,
 			);
 			path = Superheroes;
 			sourceTree = "<group>";
@@ -123,6 +120,38 @@
 				55CDF53120AC3EB3003F0564 /* Info.plist */,
 			);
 			path = SuperheroesUITests;
+			sourceTree = "<group>";
+		};
+		55CDF53D20AC3FFB003F0564 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				55CDF51320AC3EB2003F0564 /* Main.storyboard */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		55CDF53F20AC4017003F0564 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		55CDF54020AC4028003F0564 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55CDF51B20AC3EB3003F0564 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55CDF54120AC4031003F0564 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55CDF51620AC3EB3003F0564 /* Assets.xcassets */,
+				55CDF51820AC3EB3003F0564 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +285,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55CDF51220AC3EB2003F0564 /* ViewController.swift in Sources */,
 				55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,15 +458,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56PAWKLP39;
-				INFOPLIST_FILE = Superheroes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Superheroes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscar.Superheroes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,15 +478,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 56PAWKLP39;
-				INFOPLIST_FILE = Superheroes/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Superheroes/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.oscar.Superheroes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
