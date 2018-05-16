@@ -4,6 +4,7 @@ target 'Superheroes' do
   use_frameworks!
 
   pod 'Result'
+  pod 'SDWebImage'
 
   target 'SuperheroesTests' do
     inherit! :search_paths

@@ -15,7 +15,8 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
         case showDetailView = "showDetailView"
     }
 
-    let textCellIdentifier = "Cell"
+    let cellIdentifier = String(describing: ListCell.self)
+    let cellHeight: CGFloat = 200.0
     var eventHandler: ListEventHandling?
     var superheroes: [Superheroe]?
     
@@ -45,8 +46,10 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
 extension ListViewController: ListViewing {
     
     func configureUI() {
+        title = "Superheroes"
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
     }
     
     func reloadData(data: [Superheroe]) {
@@ -70,9 +73,12 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: textCellIdentifier, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ListCell else {
+            fatalError("Fail create cell in List")
+        }
         
-        cell.textLabel?.text = superheroes?[indexPath.row].name
+        cell.titleText = superheroes?[indexPath.row].name
+        cell.urlImage = superheroes?[indexPath.row].photo
         
         return cell
     }
@@ -81,7 +87,12 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         eventHandler?.pressCell(withIndex: indexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return cellHeight
     }
 }
 

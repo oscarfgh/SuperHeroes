@@ -17,6 +17,12 @@
 		55C4241520AC529A003DC6B2 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4240E20AC529A003DC6B2 /* ListViewController.swift */; };
 		55C4241620AC529A003DC6B2 /* ListViewing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4240F20AC529A003DC6B2 /* ListViewing.swift */; };
 		55C4241720AC529A003DC6B2 /* ListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4241120AC529A003DC6B2 /* ListInteractor.swift */; };
+		55C4241920AC923A003DC6B2 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4241820AC923A003DC6B2 /* Colors.swift */; };
+		55C4241D20ACA723003DC6B2 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4241B20ACA723003DC6B2 /* ListCell.swift */; };
+		55C4241E20ACA723003DC6B2 /* ListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C4241C20ACA723003DC6B2 /* ListCell.xib */; };
+		55C4242320ACB3E3003DC6B2 /* BentonSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55C4242020ACB3E2003DC6B2 /* BentonSans-Light.otf */; };
+		55C4242420ACB3E3003DC6B2 /* BentonSans-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55C4242120ACB3E2003DC6B2 /* BentonSans-Black.otf */; };
+		55C4242520ACB3E3003DC6B2 /* BentonSans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55C4242220ACB3E2003DC6B2 /* BentonSans-Regular.otf */; };
 		55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */; };
 		55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51320AC3EB2003F0564 /* Main.storyboard */; };
 		55CDF51720AC3EB3003F0564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51620AC3EB3003F0564 /* Assets.xcassets */; };
@@ -69,6 +75,12 @@
 		55C4240E20AC529A003DC6B2 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		55C4240F20AC529A003DC6B2 /* ListViewing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewing.swift; sourceTree = "<group>"; };
 		55C4241120AC529A003DC6B2 /* ListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListInteractor.swift; sourceTree = "<group>"; };
+		55C4241820AC923A003DC6B2 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		55C4241B20ACA723003DC6B2 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
+		55C4241C20ACA723003DC6B2 /* ListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListCell.xib; sourceTree = "<group>"; };
+		55C4242020ACB3E2003DC6B2 /* BentonSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Light.otf"; sourceTree = "<group>"; };
+		55C4242120ACB3E2003DC6B2 /* BentonSans-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Black.otf"; sourceTree = "<group>"; };
+		55C4242220ACB3E2003DC6B2 /* BentonSans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BentonSans-Regular.otf"; sourceTree = "<group>"; };
 		55CDF50C20AC3EB2003F0564 /* Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CDF51420AC3EB2003F0564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -180,6 +192,7 @@
 		55C4240D20AC529A003DC6B2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55C4241A20ACA6AD003DC6B2 /* Cells */,
 				55C4240E20AC529A003DC6B2 /* ListViewController.swift */,
 				55C4240F20AC529A003DC6B2 /* ListViewing.swift */,
 			);
@@ -192,6 +205,25 @@
 				55C4241120AC529A003DC6B2 /* ListInteractor.swift */,
 			);
 			path = "Use Cases";
+			sourceTree = "<group>";
+		};
+		55C4241A20ACA6AD003DC6B2 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				55C4241B20ACA723003DC6B2 /* ListCell.swift */,
+				55C4241C20ACA723003DC6B2 /* ListCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		55C4241F20ACB371003DC6B2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				55C4242120ACB3E2003DC6B2 /* BentonSans-Black.otf */,
+				55C4242020ACB3E2003DC6B2 /* BentonSans-Light.otf */,
+				55C4242220ACB3E2003DC6B2 /* BentonSans-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		55CDF50320AC3EB2003F0564 = {
@@ -282,8 +314,10 @@
 		55CDF54120AC4031003F0564 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				55C4241F20ACB371003DC6B2 /* Fonts */,
 				55CDF51620AC3EB3003F0564 /* Assets.xcassets */,
 				55CDF51820AC3EB3003F0564 /* LaunchScreen.storyboard */,
+				55C4241820AC923A003DC6B2 /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -463,10 +497,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C4242320ACB3E3003DC6B2 /* BentonSans-Light.otf in Resources */,
 				55CDF51A20AC3EB3003F0564 /* LaunchScreen.storyboard in Resources */,
+				55C4242520ACB3E3003DC6B2 /* BentonSans-Regular.otf in Resources */,
 				55CDF51720AC3EB3003F0564 /* Assets.xcassets in Resources */,
 				55CDF54320AC410C003F0564 /* Podfile in Resources */,
 				55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */,
+				55C4242420ACB3E3003DC6B2 /* BentonSans-Black.otf in Resources */,
+				55C4241E20ACA723003DC6B2 /* ListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,10 +587,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Superheroes/Pods-Superheroes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -567,7 +607,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				55C4241520AC529A003DC6B2 /* ListViewController.swift in Sources */,
+				55C4241920AC923A003DC6B2 /* Colors.swift in Sources */,
 				55C4241620AC529A003DC6B2 /* ListViewing.swift in Sources */,
+				55C4241D20ACA723003DC6B2 /* ListCell.swift in Sources */,
 				55C4241220AC529A003DC6B2 /* ListPresenter.swift in Sources */,
 				55CDF54E20AC431C003F0564 /* Resource.swift in Sources */,
 				55CDF55020AC431C003F0564 /* Data.swift in Sources */,
