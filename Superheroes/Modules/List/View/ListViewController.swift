@@ -12,7 +12,7 @@ import UIKit
 class ListViewController: UIViewController, SegueHandlerTypeProtocol {
 
     enum SegueIdentifier: String {
-        case segueIdentifier = "segueIdentifier"
+        case showDetailView = "showDetailView"
     }
 
     let textCellIdentifier = "Cell"
@@ -31,6 +31,15 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
     deinit {
         print("Bye ListViewController!")
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let segueIdentifier = segueIdentifierForSegue(segue)
+        
+        switch segueIdentifier {
+        case .showDetailView:
+            break
+        }
+    }
 }
 
 extension ListViewController: ListViewing {
@@ -42,10 +51,12 @@ extension ListViewController: ListViewing {
     
     func reloadData(data: [Superheroe]) {
         superheroes = data
-        
         tableView.reloadData()
     }
-
+    
+    func presentView(forCell index: Int) {
+        performSegueWithIdentifier(.showDetailView, sender: self)
+    }
 }
 
 extension ListViewController: UITableViewDataSource {
@@ -70,7 +81,7 @@ extension ListViewController: UITableViewDataSource {
 extension ListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        eventHandler?.pressCell(withIndex: indexPath.row)
     }
 }
 

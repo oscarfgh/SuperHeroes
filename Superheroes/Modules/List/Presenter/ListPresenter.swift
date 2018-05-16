@@ -44,4 +44,7 @@ extension ListPresenter: Presenting {
 
 extension ListPresenter: ListEventHandling {
 
+    func pressCell(withIndex index: Int) {
+        view?.presentView(forCell: index)
+    }
 }

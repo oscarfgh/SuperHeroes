@@ -12,4 +12,5 @@ protocol ListViewing: class {
 
     func configureUI()
     func reloadData(data: [Superheroe])
+    func presentView(forCell index: Int)
 }
