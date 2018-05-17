@@ -5,6 +5,7 @@ target 'Superheroes' do
 
   pod 'Result'
   pod 'SDWebImage'
+  pod 'SwiftMessages'
 
   target 'SuperheroesTests' do
     inherit! :search_paths

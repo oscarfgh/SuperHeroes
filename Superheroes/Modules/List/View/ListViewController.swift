@@ -66,6 +66,13 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
 
 extension ListViewController: ListViewing {
     
+    func showError(error: APIClientError) {
+        AlertView().showErrorView {_ in
+            AlertView().hide()
+            self.eventHandler?.retryLoadData()
+        }
+    }
+    
     func configureUI() {
         title = NSLocalizedString("title_navbar_key", comment: "")
         view.backgroundColor = Color.black

@@ -10,3 +10,7 @@
 "power_title_key" = "Power";
 "abilities_title_key" = "Abilities";
 "groups_title_key" = "Groups";
+
+"title_error_view" = "Fallo de conexión";
+"subtitle_error_view" = "Por favor vuelve a intentarlo";
+"title_button_error_view" = "Reintentar";

@@ -13,4 +13,5 @@ protocol ListViewing: class {
     func configureUI()
     func reloadData(data: [DataModel])
     func presentView(withSuperheroe superheroe: Superheroe)
+    func showError(error: APIClientError)
 }

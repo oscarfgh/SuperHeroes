@@ -27,26 +27,33 @@ class ListPresenter {
 
 extension ListPresenter: Presenting {
 
-  func viewDidLoad() {
-    print("List")
+    func viewDidLoad() {
+        print("List")
     
-    view?.configureUI()
+        view?.configureUI()
+        loadData()
+    }
     
-    interactor.superheroes { (result: Result<Superheroes, APIClientError>) in
-        switch result {
-        case .failure(let error):
-            return
-        case .success(let data):
-            self.superheroes = data.superheroes
-            let dataModel: [DataModel] = self.superheroes.map { DataModel(title: $0.name, urlImage: $0.photo) }
-            self.view?.reloadData(data: dataModel)
+    func loadData() {
+        interactor.superheroes { (result: Result<Superheroes, APIClientError>) in
+            switch result {
+            case .failure(let error):
+                self.view?.showError(error: error)
+            case .success(let data):
+                self.superheroes = data.superheroes
+                let dataModel: [DataModel] = self.superheroes.map { DataModel(title: $0.name, urlImage: $0.photo) }
+                self.view?.reloadData(data: dataModel)
+            }
         }
     }
-  }
 }
 
 extension ListPresenter: ListEventHandling {
-
+    
+    func retryLoadData() {
+        loadData()
+    }
+    
     func pressCell(withIndex index: Int) {
         let superheroe = superheroes[index]
         view?.presentView(withSuperheroe: superheroe)

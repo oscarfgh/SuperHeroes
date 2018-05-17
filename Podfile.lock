@@ -3,20 +3,24 @@ PODS:
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
+  - SwiftMessages (4.1.2)
 
 DEPENDENCIES:
   - Result
   - SDWebImage
+  - SwiftMessages
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Result
     - SDWebImage
+    - SwiftMessages
 
 SPEC CHECKSUMS:
   Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  SwiftMessages: d81f48c1f8b6bc1dbebdfffe11226f0344f937ca
 
-PODFILE CHECKSUM: 1c8cba93b20639dfa555595102b9cdf65e7fd35d
+PODFILE CHECKSUM: dd369844daa51a2b88d9a4e0df756de1d8219814
 
 COCOAPODS: 1.5.2

@@ -30,6 +30,7 @@
 		55C4247720AD7C30003DC6B2 /* TradeGothic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55C4247420AD7B46003DC6B2 /* TradeGothic-Light.otf */; };
 		55C4247920AD8689003DC6B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55C4247820AD8689003DC6B2 /* Localizable.strings */; };
 		55C4247B20AD895D003DC6B2 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4247A20AD895D003DC6B2 /* ListViewModels.swift */; };
+		55C4247E20AD9090003DC6B2 /* AlertViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4247D20AD9090003DC6B2 /* AlertViews.swift */; };
 		55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */; };
 		55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51320AC3EB2003F0564 /* Main.storyboard */; };
 		55CDF51720AC3EB3003F0564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51620AC3EB3003F0564 /* Assets.xcassets */; };
@@ -95,6 +96,7 @@
 		55C4247420AD7B46003DC6B2 /* TradeGothic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TradeGothic-Light.otf"; sourceTree = "<group>"; };
 		55C4247820AD8689003DC6B2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		55C4247A20AD895D003DC6B2 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
+		55C4247D20AD9090003DC6B2 /* AlertViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViews.swift; sourceTree = "<group>"; };
 		55CDF50C20AC3EB2003F0564 /* Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CDF51420AC3EB2003F0564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -269,6 +271,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		55C4247C20AD907B003DC6B2 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				55C4247D20AD9090003DC6B2 /* AlertViews.swift */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
 		55CDF50320AC3EB2003F0564 = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +347,7 @@
 		55CDF53F20AC4017003F0564 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				55C4247C20AD907B003DC6B2 /* UI Components */,
 				55C4240520AC5210003DC6B2 /* DI */,
 				55CDF55920AC4477003F0564 /* Constanst */,
 				55CDF55220AC4428003F0564 /* Models */,
@@ -634,11 +645,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Superheroes/Pods-Superheroes-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftMessages/SwiftMessages.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftMessages.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -661,6 +674,7 @@
 				55CDF54E20AC431C003F0564 /* Resource.swift in Sources */,
 				55C4246B20ACD11B003DC6B2 /* DetailConnector.swift in Sources */,
 				55C4247B20AD895D003DC6B2 /* ListViewModels.swift in Sources */,
+				55C4247E20AD9090003DC6B2 /* AlertViews.swift in Sources */,
 				55CDF55020AC431C003F0564 /* Data.swift in Sources */,
 				55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */,
 				55C4241720AC529A003DC6B2 /* ListInteractor.swift in Sources */,
