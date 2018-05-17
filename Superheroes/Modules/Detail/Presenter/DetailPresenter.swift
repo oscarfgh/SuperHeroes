@@ -29,7 +29,3 @@ extension DetailPresenter: Presenting {
         view?.configureUI(superheroe: superheroe)
     }
 }
-
-extension DetailPresenter: DetailEventHandling {
-
-}

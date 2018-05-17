@@ -47,7 +47,7 @@ extension SuperheroesResource: Resource {
 extension URL {
     
     static func superheroeURL() -> URL {
-        guard let baseURL = URL(string: AppURL.DomainsAPI.release) else {
+        guard let baseURL = URL(string: AppURL.domainsAPI) else {
             fatalError("API URL is needed")
         }
         return baseURL.appendingPathComponent("bvyob")

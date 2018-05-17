@@ -10,8 +10,5 @@ import Foundation
 
 struct AppURL {
 
-    struct DomainsAPI {
-        
-        static let release = "https://api.myjson.com/bins/"
-    }
+    static let domainsAPI = "https://api.myjson.com/bins/"
 }

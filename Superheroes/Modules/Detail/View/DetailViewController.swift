@@ -24,7 +24,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var titleGroupsLabel: UILabel!
     @IBOutlet weak var groupsLabel: UILabel!
     
-    var eventHandler: DetailEventHandling?
+    var eventHandler: Presenting?
 
     override func viewDidLoad() {
 
