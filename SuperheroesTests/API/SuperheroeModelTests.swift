@@ -16,10 +16,10 @@ class SuperheroeModelTests: AcceptanceTestCase {
     
     func testJSONDecoding() {
         guard
-        let object: Superheroes = createCodeableFromFile(named: "response"),
+            let object: Superheroes = createCodeableFromFile(named: "response"),
             let model: Superheroe = object.superheroes.first else {
-            XCTFail("Parse error")
-            return
+                XCTFail("Parse error")
+                return
         }
         
         let name = "Spiderman"
