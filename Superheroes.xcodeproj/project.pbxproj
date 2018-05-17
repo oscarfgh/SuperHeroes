@@ -29,6 +29,7 @@
 		55C4247620AD7C2D003DC6B2 /* TradeGothic-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55C4247320AD7B44003DC6B2 /* TradeGothic-Bold.otf */; };
 		55C4247720AD7C30003DC6B2 /* TradeGothic-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55C4247420AD7B46003DC6B2 /* TradeGothic-Light.otf */; };
 		55C4247920AD8689003DC6B2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55C4247820AD8689003DC6B2 /* Localizable.strings */; };
+		55C4247B20AD895D003DC6B2 /* ListViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4247A20AD895D003DC6B2 /* ListViewModels.swift */; };
 		55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */; };
 		55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51320AC3EB2003F0564 /* Main.storyboard */; };
 		55CDF51720AC3EB3003F0564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51620AC3EB3003F0564 /* Assets.xcassets */; };
@@ -93,6 +94,7 @@
 		55C4247320AD7B44003DC6B2 /* TradeGothic-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TradeGothic-Bold.otf"; sourceTree = "<group>"; };
 		55C4247420AD7B46003DC6B2 /* TradeGothic-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TradeGothic-Light.otf"; sourceTree = "<group>"; };
 		55C4247820AD8689003DC6B2 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		55C4247A20AD895D003DC6B2 /* ListViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModels.swift; sourceTree = "<group>"; };
 		55CDF50C20AC3EB2003F0564 /* Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CDF51420AC3EB2003F0564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 			children = (
 				55C4241B20ACA723003DC6B2 /* ListCell.swift */,
 				55C4241C20ACA723003DC6B2 /* ListCell.xib */,
+				55C4247A20AD895D003DC6B2 /* ListViewModels.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -657,6 +660,7 @@
 				55C4241220AC529A003DC6B2 /* ListPresenter.swift in Sources */,
 				55CDF54E20AC431C003F0564 /* Resource.swift in Sources */,
 				55C4246B20ACD11B003DC6B2 /* DetailConnector.swift in Sources */,
+				55C4247B20AD895D003DC6B2 /* ListViewModels.swift in Sources */,
 				55CDF55020AC431C003F0564 /* Data.swift in Sources */,
 				55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */,
 				55C4241720AC529A003DC6B2 /* ListInteractor.swift in Sources */,

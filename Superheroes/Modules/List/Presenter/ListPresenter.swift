@@ -14,6 +14,7 @@ class ListPresenter {
     weak var view: ListViewing?
     var connector: ListConnector?
     let interactor: ListInteractor
+    var superheroes: [Superheroe] = []
 
     init(interactor: ListInteractor) {
         self.interactor = interactor
@@ -36,7 +37,9 @@ extension ListPresenter: Presenting {
         case .failure(let error):
             return
         case .success(let data):
-            self.view?.reloadData(data: data.superheroes)
+            self.superheroes = data.superheroes
+            let dataModel: [DataModel] = self.superheroes.map { DataModel(title: $0.name, urlImage: $0.photo) }
+            self.view?.reloadData(data: dataModel)
         }
     }
   }
@@ -45,7 +48,8 @@ extension ListPresenter: Presenting {
 extension ListPresenter: ListEventHandling {
 
     func pressCell(withIndex index: Int) {
-        view?.presentView(forCell: index)
+        let superheroe = superheroes[index]
+        view?.presentView(withSuperheroe: superheroe)
     }
     
     func prepareDetailViewController(_ viewController: DetailViewController, superheroe: Superheroe) {

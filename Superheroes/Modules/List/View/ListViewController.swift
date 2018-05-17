@@ -19,7 +19,7 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
     let cellIdentifier = String(describing: ListCell.self)
     let cellHeight: CGFloat = 200.0
     var eventHandler: ListEventHandling?
-    var superheroes: [Superheroe]!
+    var data: [DataModel]!
     var selectSuperheroe: Superheroe!
     
     @IBOutlet weak var tableView: UITableView!
@@ -75,13 +75,13 @@ extension ListViewController: ListViewing {
         tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)
     }
     
-    func reloadData(data: [Superheroe]) {
-        superheroes = data
+    func reloadData(data: [DataModel]) {
+        self.data = data
         tableView.reloadData()
     }
     
-    func presentView(forCell index: Int) {
-        selectSuperheroe = superheroes[index]
+    func presentView(withSuperheroe superheroe: Superheroe) {
+        selectSuperheroe = superheroe
         performSegueWithIdentifier(.showDetailView, sender: self)
     }
 }
@@ -93,7 +93,7 @@ extension ListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return superheroes?.count ?? 0
+        return data?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -101,8 +101,8 @@ extension ListViewController: UITableViewDataSource {
             fatalError("Fail create cell in List")
         }
         
-        cell.titleText = superheroes?[indexPath.row].name
-        cell.urlImage = superheroes?[indexPath.row].photo
+        cell.titleText = data?[indexPath.row].title
+        cell.urlImage = data?[indexPath.row].urlImage
         
         return cell
     }

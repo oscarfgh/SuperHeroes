@@ -11,6 +11,6 @@ import Foundation
 protocol ListViewing: class {
 
     func configureUI()
-    func reloadData(data: [Superheroe])
-    func presentView(forCell index: Int)
+    func reloadData(data: [DataModel])
+    func presentView(withSuperheroe superheroe: Superheroe)
 }
