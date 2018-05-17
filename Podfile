@@ -1,3 +1,4 @@
+source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 
 target 'Superheroes' do
@@ -8,13 +9,9 @@ target 'Superheroes' do
   pod 'SwiftMessages'
 
   target 'SuperheroesTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'SuperheroesUITests' do
-    inherit! :search_paths
-    # Pods for testing
+      pod 'OHHTTPStubs/Swift'
+      pod 'Nimble'
+      pod 'KIF'
   end
 
 end
