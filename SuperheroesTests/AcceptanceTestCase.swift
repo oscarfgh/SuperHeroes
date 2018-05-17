@@ -39,6 +39,7 @@ class AcceptanceTestCase: KIFTestCase {
         rootViewController.isNavigationBarHidden = navigationBarHidden
         rootViewController.viewControllers = [viewController]
         present(viewController: rootViewController)
+        tester().waitForAnimationsToFinish()
     }
     
     func wireUpModule() -> UIViewController {

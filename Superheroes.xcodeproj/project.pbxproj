@@ -40,11 +40,14 @@
 		55C4249820ADC49E003DC6B2 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 55C4249720ADC49E003DC6B2 /* response.json */; };
 		55C4249A20ADC4DD003DC6B2 /* SuperheroesModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4249920ADC4DD003DC6B2 /* SuperheroesModelTests.swift */; };
 		55C4249C20ADC6F7003DC6B2 /* SuperheroeModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4249B20ADC6F7003DC6B2 /* SuperheroeModelTests.swift */; };
+		55C4249E20ADC91D003DC6B2 /* XCTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C4249D20ADC91D003DC6B2 /* XCTestCase.swift */; };
+		55C424A320ADC997003DC6B2 /* ListConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C424A220ADC997003DC6B2 /* ListConnectorTests.swift */; };
+		55C424A620ADCAB3003DC6B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 55C424A520ADCAB3003DC6B2 /* Podfile */; };
+		55C424A820ADCB0B003DC6B2 /* MockSuperheroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C424A720ADCB0B003DC6B2 /* MockSuperheroesRepository.swift */; };
 		55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */; };
 		55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51320AC3EB2003F0564 /* Main.storyboard */; };
 		55CDF51720AC3EB3003F0564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51620AC3EB3003F0564 /* Assets.xcassets */; };
 		55CDF51A20AC3EB3003F0564 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51820AC3EB3003F0564 /* LaunchScreen.storyboard */; };
-		55CDF54320AC410C003F0564 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF54220AC410C003F0564 /* Podfile */; };
 		55CDF54D20AC431C003F0564 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF54620AC431C003F0564 /* APIClient.swift */; };
 		55CDF54E20AC431C003F0564 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF54720AC431C003F0564 /* Resource.swift */; };
 		55CDF54F20AC431C003F0564 /* APIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF54820AC431C003F0564 /* APIClientError.swift */; };
@@ -108,6 +111,10 @@
 		55C4249720ADC49E003DC6B2 /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		55C4249920ADC4DD003DC6B2 /* SuperheroesModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroesModelTests.swift; sourceTree = "<group>"; };
 		55C4249B20ADC6F7003DC6B2 /* SuperheroeModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperheroeModelTests.swift; sourceTree = "<group>"; };
+		55C4249D20ADC91D003DC6B2 /* XCTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestCase.swift; sourceTree = "<group>"; };
+		55C424A220ADC997003DC6B2 /* ListConnectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConnectorTests.swift; sourceTree = "<group>"; };
+		55C424A520ADCAB3003DC6B2 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		55C424A720ADCB0B003DC6B2 /* MockSuperheroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSuperheroesRepository.swift; sourceTree = "<group>"; };
 		55CDF50C20AC3EB2003F0564 /* Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CDF51420AC3EB2003F0564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -116,7 +123,6 @@
 		55CDF51B20AC3EB3003F0564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55CDF52020AC3EB3003F0564 /* SuperheroesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SuperheroesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CDF52620AC3EB3003F0564 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55CDF54220AC410C003F0564 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		55CDF54620AC431C003F0564 /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		55CDF54720AC431C003F0564 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		55CDF54820AC431C003F0564 /* APIClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClientError.swift; sourceTree = "<group>"; };
@@ -301,6 +307,7 @@
 		55C4248820ADC114003DC6B2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				55C424A420ADCA2B003DC6B2 /* Mocks */,
 				55C4248C20ADC149003DC6B2 /* Extension */,
 				55C4248920ADC122003DC6B2 /* Canned Responses */,
 			);
@@ -322,15 +329,32 @@
 				55C4248D20ADC16C003DC6B2 /* NSError.swift */,
 				55C4248F20ADC1E4003DC6B2 /* APIClientError.swift */,
 				55C4249520ADC44B003DC6B2 /* KIFTestActor.swift */,
+				55C4249D20ADC91D003DC6B2 /* XCTestCase.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		55C4249F20ADC956003DC6B2 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				55C424A220ADC997003DC6B2 /* ListConnectorTests.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		55C424A420ADCA2B003DC6B2 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				55C424A720ADCB0B003DC6B2 /* MockSuperheroesRepository.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		55CDF50320AC3EB2003F0564 = {
 			isa = PBXGroup;
 			children = (
 				55CDF50E20AC3EB2003F0564 /* Superheroes */,
-				55CDF54220AC410C003F0564 /* Podfile */,
+				55C424A520ADCAB3003DC6B2 /* Podfile */,
 				55CDF52320AC3EB3003F0564 /* SuperheroesTests */,
 				55CDF50D20AC3EB2003F0564 /* Products */,
 				CB7BC63FB52543FD76E04185 /* Pods */,
@@ -365,6 +389,7 @@
 			children = (
 				55C4248820ADC114003DC6B2 /* Helpers */,
 				55C4248520ADBDF4003DC6B2 /* API */,
+				55C4249F20ADC956003DC6B2 /* List */,
 				55C4249320ADC40E003DC6B2 /* AcceptanceTestCase.swift */,
 				55CDF52620AC3EB3003F0564 /* Info.plist */,
 			);
@@ -577,7 +602,6 @@
 				55C4247720AD7C30003DC6B2 /* TradeGothic-Light.otf in Resources */,
 				55C4247920AD8689003DC6B2 /* Localizable.strings in Resources */,
 				55C4247520AD7C29003DC6B2 /* Spider-Man.otf in Resources */,
-				55CDF54320AC410C003F0564 /* Podfile in Resources */,
 				55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */,
 				55C4241E20ACA723003DC6B2 /* ListCell.xib in Resources */,
 				55C4248020AD9996003DC6B2 /* LoadingView.xib in Resources */,
@@ -588,6 +612,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55C424A620ADCAB3003DC6B2 /* Podfile in Resources */,
 				55C4249820ADC49E003DC6B2 /* response.json in Resources */,
 				55C4248B20ADC143003DC6B2 /* test.json in Resources */,
 			);
@@ -725,8 +750,11 @@
 			files = (
 				55C4249620ADC44B003DC6B2 /* KIFTestActor.swift in Sources */,
 				55C4248720ADBE25003DC6B2 /* APIClientTests.swift in Sources */,
+				55C4249E20ADC91D003DC6B2 /* XCTestCase.swift in Sources */,
 				55C4249420ADC40E003DC6B2 /* AcceptanceTestCase.swift in Sources */,
+				55C424A320ADC997003DC6B2 /* ListConnectorTests.swift in Sources */,
 				55C4249C20ADC6F7003DC6B2 /* SuperheroeModelTests.swift in Sources */,
+				55C424A820ADCB0B003DC6B2 /* MockSuperheroesRepository.swift in Sources */,
 				55C4249020ADC1E4003DC6B2 /* APIClientError.swift in Sources */,
 				55C4248E20ADC16C003DC6B2 /* NSError.swift in Sources */,
 				55C4249A20ADC4DD003DC6B2 /* SuperheroesModelTests.swift in Sources */,
