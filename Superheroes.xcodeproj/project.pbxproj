@@ -276,10 +276,18 @@
 		55C4247C20AD907B003DC6B2 /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
+				55C4248120AD9CE0003DC6B2 /* Alert Views */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		55C4248120AD9CE0003DC6B2 /* Alert Views */ = {
+			isa = PBXGroup;
+			children = (
 				55C4247D20AD9090003DC6B2 /* AlertViews.swift */,
 				55C4247F20AD9996003DC6B2 /* LoadingView.xib */,
 			);
-			path = "UI Components";
+			path = "Alert Views";
 			sourceTree = "<group>";
 		};
 		55CDF50320AC3EB2003F0564 = {
