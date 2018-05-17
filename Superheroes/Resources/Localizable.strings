@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Superheroes
+
+  Created by Oscar on 17/5/18.
+  Copyright © 2018 Oscar García. All rights reserved.
+*/
+
+"title_navbar_key" = "Superheores";
+"power_title_key" = "Power";
+"abilities_title_key" = "Abilities";
+"groups_title_key" = "Groups";

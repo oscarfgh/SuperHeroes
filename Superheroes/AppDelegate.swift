@@ -34,10 +34,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func setupAppearance() {
-        UINavigationBar.appearance().barTintColor = Color.secondary
+        UINavigationBar.appearance().barTintColor = Color.primary
         UINavigationBar.appearance().tintColor = Color.white
+        
+        guard let font = UIFont(name: "Spider-Man", size: 32.0) else {
+            return
+        }
+        
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.foregroundColor: Color.white,
-                                                            NSAttributedStringKey.font: UIFont(name: "BentonSans-Black", size: 20.0)]
+                                                            NSAttributedStringKey.font: font]
     }
 }
 

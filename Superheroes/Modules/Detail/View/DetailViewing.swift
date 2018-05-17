@@ -9,5 +9,6 @@
 import Foundation
 
 protocol DetailViewing: class {
-
+    
+    func configureUI(superheroe: Superheroe)
 }

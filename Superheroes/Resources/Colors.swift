@@ -37,7 +37,7 @@ struct Color {
         return UIColor(named: self)
     }
     
-    static let black = Color(rgbaValue: 0xff181818).color
+    static let black = Color(rgbaValue: 0x181818ff).color
     static let white = Color(rgbaValue: 0xffffffff).color
     static let primary = Color(rgbaValue: 0xed1b2aff).color
     static let secondary = Color(rgbaValue: 0xb2131eff).color

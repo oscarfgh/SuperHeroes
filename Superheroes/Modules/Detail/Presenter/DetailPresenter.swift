@@ -8,19 +8,26 @@
 
 class DetailPresenter {
 
-  weak var view: DetailViewing?
-  var connector: DetailConnector?
-
-  deinit {
-    print("Bye DetailPresenter!")
-  }
+    weak var view: DetailViewing?
+    var connector: DetailConnector?
+    let superheroe: Superheroe
+    
+    init(superheroe: Superheroe) {
+        self.superheroe = superheroe
+    }
+    
+    deinit {
+        print("Bye DetailPresenter!")
+    }
 }
 
 extension DetailPresenter: Presenting {
 
-  func viewDidLoad() {
-    print("Detail")
-  }
+    func viewDidLoad() {
+        print("Detail")
+        
+        view?.configureUI(superheroe: superheroe)
+    }
 }
 
 extension DetailPresenter: DetailEventHandling {

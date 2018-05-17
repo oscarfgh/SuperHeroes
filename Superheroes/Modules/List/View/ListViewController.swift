@@ -67,8 +67,9 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
 extension ListViewController: ListViewing {
     
     func configureUI() {
-        title = "SUPERHEROES"
-        tableView.backgroundColor = Color.secondary.withAlpha(0.9)
+        title = NSLocalizedString("title_navbar_key", comment: "")
+        view.backgroundColor = Color.black
+        tableView.backgroundColor = Color.black
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: cellIdentifier, bundle: nil), forCellReuseIdentifier: cellIdentifier)

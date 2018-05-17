@@ -25,16 +25,13 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mask" translatesAutoresizingMaskIntoConstraints="NO" id="jRq-xd-Rop">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoT-hg-ImC">
-                        <rect key="frame" x="16" y="143.5" width="198" height="40"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="40" id="pgV-Ty-D1h"/>
-                        </constraints>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XoT-hg-ImC">
+                        <rect key="frame" x="16" y="116.5" width="288" height="67"/>
                         <attributedString key="attributedText">
                             <fragment content="Spiderman">
                                 <attributes>
                                     <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <font key="NSFont" size="36" name="BentonSans-Black"/>
+                                    <font key="NSFont" size="64" name="SpiderMan"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
@@ -44,6 +41,7 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="TRa-LN-Wbh" secondAttribute="bottom" id="587-HR-YyB"/>
                     <constraint firstItem="XoT-hg-ImC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="A9V-6t-fW1"/>
+                    <constraint firstAttribute="trailing" secondItem="XoT-hg-ImC" secondAttribute="trailing" constant="16" id="IgE-IH-ZaN"/>
                     <constraint firstItem="jRq-xd-Rop" firstAttribute="bottom" secondItem="TRa-LN-Wbh" secondAttribute="bottom" id="Jhh-cb-NOC"/>
                     <constraint firstItem="jRq-xd-Rop" firstAttribute="leading" secondItem="TRa-LN-Wbh" secondAttribute="leading" id="Omi-Po-w6a"/>
                     <constraint firstItem="jRq-xd-Rop" firstAttribute="trailing" secondItem="TRa-LN-Wbh" secondAttribute="trailing" id="Uqn-my-gUV"/>
@@ -63,6 +61,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="mask" width="375" height="200"/>
+        <image name="mask" width="375" height="135"/>
     </resources>
 </document>

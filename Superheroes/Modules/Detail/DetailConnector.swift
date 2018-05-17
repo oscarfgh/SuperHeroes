@@ -13,7 +13,7 @@ class DetailConnector {
     var view: DetailViewController!
 
     func wireUp(_ viewController: DetailViewController, superheroe: Superheroe) {
-        let presenter = DetailPresenter()
+        let presenter = DetailPresenter(superheroe: superheroe)
 
         view = viewController
         view.eventHandler = presenter
