@@ -36,11 +36,16 @@ class DetailViewController: UIViewController {
     deinit {
         print("Bye DetailViewController!")
     }
+    
+    func setupAccessibilityLabel() {
+        view.accessibilityLabel = "detail_view"
+    }
 }
 
 extension DetailViewController: DetailViewing {
     
     func configureUI(superheroe: Superheroe) {
+        setupAccessibilityLabel()
         view.backgroundColor = Color.black
         scrollView.backgroundColor = Color.black
         title = superheroe.name

@@ -44,6 +44,7 @@
 		55C424A320ADC997003DC6B2 /* ListConnectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C424A220ADC997003DC6B2 /* ListConnectorTests.swift */; };
 		55C424A620ADCAB3003DC6B2 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 55C424A520ADCAB3003DC6B2 /* Podfile */; };
 		55C424A820ADCB0B003DC6B2 /* MockSuperheroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C424A720ADCB0B003DC6B2 /* MockSuperheroesRepository.swift */; };
+		55C424AA20ADCD59003DC6B2 /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C424A920ADCD59003DC6B2 /* ListViewControllerTests.swift */; };
 		55CDF51020AC3EB2003F0564 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */; };
 		55CDF51520AC3EB2003F0564 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51320AC3EB2003F0564 /* Main.storyboard */; };
 		55CDF51720AC3EB3003F0564 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CDF51620AC3EB3003F0564 /* Assets.xcassets */; };
@@ -115,6 +116,7 @@
 		55C424A220ADC997003DC6B2 /* ListConnectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListConnectorTests.swift; sourceTree = "<group>"; };
 		55C424A520ADCAB3003DC6B2 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		55C424A720ADCB0B003DC6B2 /* MockSuperheroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSuperheroesRepository.swift; sourceTree = "<group>"; };
+		55C424A920ADCD59003DC6B2 /* ListViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
 		55CDF50C20AC3EB2003F0564 /* Superheroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Superheroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CDF50F20AC3EB2003F0564 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CDF51420AC3EB2003F0564 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 		55C4249F20ADC956003DC6B2 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				55C424A920ADCD59003DC6B2 /* ListViewControllerTests.swift */,
 				55C424A220ADC997003DC6B2 /* ListConnectorTests.swift */,
 			);
 			path = List;
@@ -751,6 +754,7 @@
 				55C4249620ADC44B003DC6B2 /* KIFTestActor.swift in Sources */,
 				55C4248720ADBE25003DC6B2 /* APIClientTests.swift in Sources */,
 				55C4249E20ADC91D003DC6B2 /* XCTestCase.swift in Sources */,
+				55C424AA20ADCD59003DC6B2 /* ListViewControllerTests.swift in Sources */,
 				55C4249420ADC40E003DC6B2 /* AcceptanceTestCase.swift in Sources */,
 				55C424A320ADC997003DC6B2 /* ListConnectorTests.swift in Sources */,
 				55C4249C20ADC6F7003DC6B2 /* SuperheroeModelTests.swift in Sources */,

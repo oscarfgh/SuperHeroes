@@ -15,3 +15,11 @@ protocol ListEventHandling: Presenting {
     func removeDetailViewController()
     func retryLoadData()
 }
+
+extension ListEventHandling {
+    
+    func pressCell(withIndex index: Int) {}
+    func prepareDetailViewController(_ viewController: DetailViewController, superheroe: Superheroe) {}
+    func removeDetailViewController() {}
+    func retryLoadData() {}
+}

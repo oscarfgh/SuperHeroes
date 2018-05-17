@@ -33,7 +33,7 @@ class AcceptanceTestCase: KIFTestCase {
     
     // MARK: - Private
     
-    func openViewController(_ navigationBarHidden: Bool = true) {
+    func openViewController(_ navigationBarHidden: Bool = false) {
         let viewController = wireUpModule()
         let rootViewController = UINavigationController()
         rootViewController.isNavigationBarHidden = navigationBarHidden

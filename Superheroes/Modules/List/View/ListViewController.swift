@@ -62,6 +62,11 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
             break
         }
     }
+    
+    func setupAccessibilityLabel() {
+        tableView.accessibilityLabel = "list_tableview"
+        view.accessibilityLabel = "list_view"
+    }
 }
 
 extension ListViewController: ListViewing {
@@ -82,6 +87,7 @@ extension ListViewController: ListViewing {
     }
     
     func configureUI() {
+        setupAccessibilityLabel()
         title = NSLocalizedString("title_navbar_key", comment: "")
         view.backgroundColor = Color.black
         tableView.backgroundColor = Color.black
