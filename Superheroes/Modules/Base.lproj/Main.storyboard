@@ -59,7 +59,7 @@
             </objects>
             <point key="canvasLocation" x="-1090" y="123"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Title-->
         <scene sceneID="vuS-DD-iBP">
             <objects>
                 <viewController id="eHd-EO-tzq" customClass="DetailViewController" customModule="Superheroes" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,10 +69,21 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="1xL-lX-GeX"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="1eu-Uv-dJ8">
+                        <barButtonItem key="leftBarButtonItem" image="right-chevron" style="plain" id="z6d-is-x5c">
+                            <connections>
+                                <segue destination="Wzk-vc-p2P" kind="unwind" identifier="closeDetailView" unwindAction="unwindToListWithSegue:" id="Mq8-nd-wcY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfb-19-SP9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Wzk-vc-p2P" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="-322" y="123"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="right-chevron" width="14" height="24"/>
+    </resources>
 </document>

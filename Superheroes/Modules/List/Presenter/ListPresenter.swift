@@ -51,4 +51,8 @@ extension ListPresenter: ListEventHandling {
     func prepareDetailViewController(_ viewController: DetailViewController, superheroe: Superheroe) {
         connector?.initializeDetailModule(viewController, superheroe: superheroe)
     }
+    
+    func removeDetailViewController() {
+        connector?.deinitializeDetailModule()
+    }
 }

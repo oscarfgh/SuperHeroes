@@ -12,7 +12,8 @@ import UIKit
 class ListViewController: UIViewController, SegueHandlerTypeProtocol {
 
     enum SegueIdentifier: String {
-        case showDetailView = "showDetailView"
+        case showDetailView
+        case closeDetailView
     }
 
     let cellIdentifier = String(describing: ListCell.self)
@@ -46,6 +47,19 @@ class ListViewController: UIViewController, SegueHandlerTypeProtocol {
             }
 
             eventHandler?.prepareDetailViewController(viewController, superheroe: selectSuperheroe)
+        default:
+            break
+        }
+    }
+    
+    @IBAction func unwindToList(segue:UIStoryboardSegue) {
+        let segueIdentifier = segueIdentifierForSegue(segue)
+        
+        switch segueIdentifier {
+        case .closeDetailView:
+            eventHandler?.removeDetailViewController()
+        default:
+            break
         }
     }
 }
