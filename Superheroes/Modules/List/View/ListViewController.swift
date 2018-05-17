@@ -73,6 +73,14 @@ extension ListViewController: ListViewing {
         }
     }
     
+    func showLoadingView() {
+        AlertView().showLoadingView()
+    }
+    
+    func hideLoadingView() {
+        AlertView().hide()
+    }
+    
     func configureUI() {
         title = NSLocalizedString("title_navbar_key", comment: "")
         view.backgroundColor = Color.black

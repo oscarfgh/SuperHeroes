@@ -14,4 +14,6 @@ protocol ListViewing: class {
     func reloadData(data: [DataModel])
     func presentView(withSuperheroe superheroe: Superheroe)
     func showError(error: APIClientError)
+    func showLoadingView()
+    func hideLoadingView()
 }

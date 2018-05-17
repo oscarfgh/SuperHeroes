@@ -35,7 +35,9 @@ extension ListPresenter: Presenting {
     }
     
     func loadData() {
+        view?.showLoadingView()
         interactor.superheroes { (result: Result<Superheroes, APIClientError>) in
+            self.view?.hideLoadingView()
             switch result {
             case .failure(let error):
                 self.view?.showError(error: error)
