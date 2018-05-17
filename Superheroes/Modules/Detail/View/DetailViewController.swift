@@ -39,6 +39,17 @@ class DetailViewController: UIViewController {
     
     func setupAccessibilityLabel() {
         view.accessibilityLabel = "detail_view"
+        scrollView.accessibilityLabel = "scrollview"
+        imageView.accessibilityLabel = "imageview"
+        nameLabel.accessibilityLabel = "name_label"
+        realNameLabel.accessibilityLabel = "real_name_label"
+        heightLabel.accessibilityLabel = "height_label"
+        titlePowerLabel.accessibilityLabel = "title_power_label"
+        powerLabel.accessibilityLabel = "power_label"
+        titleAbilitiesLabel.accessibilityLabel = "title_abilities_label"
+        abilitiesLabel.accessibilityLabel = "abilities_label"
+        titleGroupsLabel.accessibilityLabel = "title_groups_label"
+        groupsLabel.accessibilityLabel = "groups_label"
     }
 }
 

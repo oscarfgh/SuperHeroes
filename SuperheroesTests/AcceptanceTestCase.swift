@@ -34,6 +34,7 @@ class AcceptanceTestCase: KIFTestCase {
     // MARK: - Private
     
     func openViewController(_ navigationBarHidden: Bool = false) {
+        tester().waitForAnimationsToFinish()
         let viewController = wireUpModule()
         let rootViewController = UINavigationController()
         rootViewController.isNavigationBarHidden = navigationBarHidden

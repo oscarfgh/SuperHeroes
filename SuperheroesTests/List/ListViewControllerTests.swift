@@ -73,7 +73,12 @@ class ListViewControllerTests: AcceptanceTestCase {
         openViewController()
         
         tester().waitForView(withAccessibilityLabel: "list_view")
+    }
+    
+    func testShowTitleNavBar() {
+        openViewController()
         
+        tester().waitForView(withAccessibilityLabel: "Superheroes")
     }
     
     func testShowTableViewWithNumberOfSectionAndRowsIsCorrect() {
@@ -115,7 +120,6 @@ class ListViewControllerTests: AcceptanceTestCase {
     func testShowAlertViewAndPressRetryInListViewController() {
         mockSuperheroesRepository.superheroesResult = Result(error: APIClientError.httpClientError(error: NSError.networkError()))
         
-        tester().waitForAnimationsToFinish()
         openViewController()
         
         mockSuperheroesRepository.superheroesResult = Result(value: superheroes)
@@ -131,10 +135,9 @@ class ListViewControllerTests: AcceptanceTestCase {
         let indexPath = IndexPath(row: 0, section: 0)
         tester().tapRow(at: indexPath, in: tableView)
         
-        tester().waitForView(withAccessibilityLabel: "detail_view")
+        tester().waitForView(withAccessibilityLabel: "title")
     }
 
-    
     // MARK: - Private
     
     override func wireUpModule() -> ListViewController {
